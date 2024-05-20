@@ -1,0 +1,174 @@
+
+/*** TARJETA DE CONTACTO ****/
+body {
+  background-image: radial-gradient(
+      circle at 20% 100%,
+      rgba(184, 184, 184, 0.1) 0%,
+      rgba(184, 184, 184, 0.1) 33%,
+      rgba(96, 96, 96, 0.1) 33%,
+      rgba(96, 96, 96, 0.1) 66%,
+      rgba(7, 7, 7, 0.1) 66%,
+      rgba(7, 7, 7, 0.1) 99%
+    ),
+    linear-gradient(40deg, #040a22, #162561, #202e64, #6f7aa6);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 5vh;
+    background-color: #ffffff00;
+    margin-top: 2%;
+   
+  }
+  
+  .contact-card {
+    margin: 9%;
+    flex: 1 1 100%;
+    max-width: 1170px;
+    border-radius: 20px;
+  }
+  
+  .contact-card > .mdl-card__supporting-text > .mdl-list {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  
+  .contact-card > .mdl-card__title {
+    height: 250px;
+    color: #fff;
+    background: linear-gradient(to bottom, #04e4f800 , #121212ae),url('https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .contact-card > .mdl-card__title > .mdl-card__title-text {
+    font-size: 1.2rem;
+    margin-left: 0%;
+  
+  }
+  
+  .contact-card > .mdl-card__title > .mdl-button--fab {
+    position: absolute;
+    right: 16px;
+    bottom: -25px;
+    overflow: hidden;
+  }
+  
+  .contact-card > .mdl-card__menu {
+    color: #fff;
+  }
+  
+  @media (min-width: 720px) {
+    .contact-card > .mdl-card__title {
+      height: 360px;
+    }
+  
+    .contact-card > .mdl-card__title > .mdl-card__title-text {
+      font-size: 2rem;
+      margin-bottom: 16px;
+      margin-left: 0px;
+    }
+    
+    .contact-card > .mdl-card__supporting-text {
+      padding: 32px;
+    }
+  }
+
+
+  .mdl-list__item {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .04em;
+    line-height: 1;
+    min-height: 100px;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    padding: 16px;
+    cursor: default;
+    color: rgba(0, 0, 0, .87);
+    overflow: hidden;
+}
+
+  /* IMAGEN EN TARJETA*/
+
+.w-19{
+    margin-bottom: -150px;
+    position: absolute;
+    right: 20px;
+    max-width: 250px;
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+  }
+  @media (max-width: 720px) {
+    .w-19{
+      margin-top: -90px;
+      position: absolute;
+      left: 20px;
+      max-width: 150px;
+      border: 5px solid #ffffff;
+      border-radius: 50%;
+    }
+  }
+
+
+
+/* Redes Sociales ****/
+.wrapper .social-icons{
+    margin:15px 0 15px 0;
+    margin: 15px auto;
+  }
+  
+  
+  .social-icons a{
+    position:relative;
+    height:40px;
+    width:40px;
+    margin:0 5px;
+    display:inline-flex;
+    text-decoration:none;
+    border-radius:50%
+  }
+  
+  .social-icons a:hover::before,.profile-card .icon:hover::before,.buttons button:hover:before{content:"";position:absolute;top:0;left:0;bottom:0;right:0;border-radius:50%;background:#ecf0f3;box-shadow:inset -3px -3px 7px #ffffff,inset 3px 3px 5px #ceced1}
+  
+  .buttons button:hover:before{
+    z-index:-1;
+    border-radius:5px}
+  
+  .social-icons a i{
+    position:relative;
+    z-index:3;
+    text-align:center;
+    width:100%;
+    height:100%;
+    line-height:40px;
+    font-size: 2rem;
+  }
+  
+  .social-icons a.fb i{
+    color:#4267B2
+  }
+  
+  .social-icons a.twitter i{
+    color:#1DA1F2
+  }
+  
+  .social-icons a.insta i{
+    color:#E1306C
+  }
+  
+  .social-icons a.yt i{
+    color:#ff0000
+  }
+
+  
+  
+  
