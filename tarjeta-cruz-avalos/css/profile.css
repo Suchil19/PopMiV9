@@ -1,0 +1,389 @@
+
+/*** HEROE ***/
+
+.hero {
+    position: relative;
+    background: linear-gradient(to bottom, #c3c3c337 , #076dd241), url("../img/banner.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding-top: 150px;
+    height: 35%;
+    letter-spacing: 2px;
+    /*border-radius: 0 0 90% 90%/0 0 30% 30%;*/
+    z-index: -1;
+  }
+  
+  .hero:before {
+    content:'';
+    position: absolute;
+      top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--color-degradado-01);
+    z-index: -1;
+  }
+    .hero h1 {
+    font-size: 1rem;
+    line-height: 1.3;
+    }
+    .hero h1 span {
+    font-size: 2rem;
+    color: var(--blanco);
+    border-bottom: 3px solid var(--blanco);
+    padding-bottom: 9px;
+    line-height: 3;
+    }
+    
+    .mouse {
+    display: block;
+    margin: 0 auto;
+    width: 26px;
+    height: 46px;
+    border-radius: 13px;
+    border: 2px solid var(--blanco);
+    position: absolute;
+    bottom: 40px;
+    position: absolute;
+    left: 50%;
+    margin-left: -7px;
+    }
+    .mouse span {
+    display: block;
+    margin: 6px auto;
+    width: 2px;
+    height: 2px;
+    border-radius: 4px;
+    background: var(--blanco);
+    border: 3px solid transparent;
+    -webkit-animation-duration: 1s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: scroll;
+    animation-name: scroll;
+    }
+    
+    @-webkit-keyframes scroll {
+    0% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    
+    100% {
+      opacity: 0;
+      -webkit-transform: translateY(20px);
+      transform: translateY(20px);
+    }
+    }
+    @keyframes scroll {
+    0% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+    
+    100% {
+      opacity: 0;
+      -webkit-transform: translateY(20px);
+      -ms-transform: translateY(20px);
+      transform: translateY(20px);
+    }
+    }
+  
+    
+
+
+ 	  /* boton video */
+
+     .btn-2{
+      position: relative;
+      background-color: #8167a9;
+      color: #fff;
+      padding: 20px 25px;
+      border: none;
+      border-radius: 50px;
+      transition: all 0.5s ease;
+      margin-right: -220px;
+      margin-top: -60px;
+      z-index: 99 !important;
+      /*-webkit-box-shadow: 0px 7px 22px -11px #000000; 
+      box-shadow: 0px 7px 22px -11px #000000;*/
+    }
+    
+    .btn-2:hover{
+      color: burlywood;
+      background-color: #55308a;
+    }
+
+
+
+
+.container__img__profile{
+    margin-top: -290px;
+    width: 100%;
+/*
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: transparent;*/
+z-index: 2;
+    position: relative;
+  }
+  .profile_container{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+    width: min(500px,100%);
+    position: relative;
+    z-index: 2;
+  }
+  .back{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    box-shadow: 10px 10px 0  #a200ffb1 , -10px -10px 0  #8d08d08f;
+    border-radius: 50%;
+    animation: rotate 9s infinite linear;
+  }
+  .profile{
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+    background-image: url("../img/fabiola.png");
+    background-size: 100%;
+    background-position: center;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    z-index: 1;
+  }
+  .occupation{
+  color: #8d08d0;
+  }
+  .profile:hover{
+    background-size: 110%;
+    box-shadow: 10px 10px 0  #8d08d0 , -10px -10px 0  #ff006f;
+  }
+  .profile_infos{
+    text-align: center;
+  }
+  @keyframes rotate {
+    to{
+      transform: rotate(360deg);
+    }
+  }
+
+
+ /***** GRID ****/
+
+
+ .activity-section {
+ position: absolute;
+	padding-bottom: 100px;
+   top: -230px;
+   -webkit-box-shadow: 6px 8px 26px -11px rgba(0,0,0,0.75);
+-moz-box-shadow: 6px 8px 26px -11px rgba(0,0,0,0.75);
+box-shadow: 6px 8px 26px -11px rgba(0,0,0,0.75);
+
+  }
+
+  .activity-section h4{
+	  font-size: 1.5rem;
+	  font-weight: 900 !important;
+    
+  }
+
+  .activity-section p{
+	  font-size: 1rem;
+	  color: #000000;
+	  font-weight: 500;
+  }
+
+  .activity-icon{
+	  text-decoration: none;
+	  transition: ease-in .2s;
+	  max-width: 120px;
+	  margin: 0 auto;
+	  /*max-height: 120px;*/
+    
+  }
+  .activity-icon:hover{
+	transform: scale(1.2);
+	transition: ease-in .2s;
+  }
+
+  /*Aqui cambiamos el color del h4*/
+  .activity-content a{
+	color: #333333;
+  font-weight: 900;
+  }
+  .activity-bg-image {
+    background-color: #8d08d0;
+	background-image: url("../../img/FondoTarjeta/backgorund01.jpeg");
+	color: #fff;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	padding-top: 19px;
+	margin-bottom: 19px;
+	position: relative;
+	max-width: 1200px;
+	width: 95%;
+	margin: 0 auto;
+	border-radius: 10px;
+
+  }
+  .activity-bg-image:before {
+	content: "";
+	/*background-color: #05418ab6;*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.75;
+	border-radius: 10px;
+  }
+  .section-heading-white {
+	color: #fff;
+  }
+  
+  .section-heading {
+	margin-bottom: 50px;
+  }
+  .section-heading h5 {
+	color: #2f2f2f;
+	font-size: 2rem;
+	font-weight: 700;
+	line-height: 1.2;
+	margin-top: 10rem;
+	text-transform: uppercase;
+    font-style: italic;
+	display: inline-block;
+  border-bottom: 3px solid #0000001d;
+  }
+  .section-heading-white h2,
+  .section-heading-white p {
+	color: #333333;
+  }
+  
+  .section-heading h2 {
+	font-size: 1.2rem;
+	font-weight: 900;
+	line-height: 1.1;
+	/*text-transform: uppercase;*/
+  }
+  .title-icon-divider {
+	color: #333333;
+	line-height: 1;
+	position: relative;
+	margin-top: 25px;
+	display: flex;
+  }
+  .text-center .title-icon-divider {
+	justify-content: center;
+  }
+  .section-heading-white .title-icon-divider {
+	color: #000000;
+  }
+  .title-icon-divider:before,
+  .title-icon-divider:after {
+	content: "....";
+	display: inline-block;
+	font-size: 37px;
+	line-height: 0;
+	letter-spacing: 3px;
+  }
+  .title-icon-divider [class*="fa-"] {
+	font-size: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+  }
+  .activity-inner {
+	display: flex;
+	flex-wrap: wrap;
+  }
+  .activity-bg-image .activity-inner.row {
+	margin-left: 0;
+	margin-right: 0;
+  }
+  .activity-bg-image .activity-inner [class*="col-"] {
+	padding-left: 0;
+	padding-right: 0;
+  }
+  
+  .activity-inner .activity-item {
+	border: 1px solid var(--color-principal);
+	text-align: center;
+	padding: 15px;
+  }
+  .activity-bg-image .activity-item {
+	border-width: 0 2px 0 0;
+	/*color del borde*/
+	border-color: var(--color-principal);
+	margin-bottom: 0;
+  }
+  .activity-bg-image [class*="col-"]:last-child .activity-item {
+	border-right: none;
+  }
+  @media (max-width: 991px) and (min-width: 768px) {
+  .activity-bg-image [class*=col-]:nth-child(3) ~ [class*=col-] .activity-item {
+	  border-bottom: none;
+  }
+	}
+  @media screen and (max-width: 767px) {
+  .activity-bg-image .activity-item {
+	  border-width: 0 2px 2px 0;
+  }
+	}
+  @media (max-width: 991px) and (min-width: 768px) { 
+  .activity-bg-image .activity-item {
+	  border-width: 0 1px 1px 0;
+  }
+  }
+  @media (max-width: 991px) and (min-width: 768px) {
+  .activity-bg-image [class*=col-]:nth-child(3) .activity-item {
+	  border-right: none;
+  }
+	}
+  @media screen and (max-width: 767px) { 
+  .activity-bg-image [class*=col-]:nth-child(2n+2) .activity-item {
+	  border-right: none;
+  }
+  }
+  @media screen and (max-width: 767px) { 
+  .activity-bg-image [class*=col-]:nth-child(4) ~ [class*=col-] .activity-item {
+	  border-bottom: none;
+  }
+  }
+  .activity-inner .activity-item .activity-icon {
+	margin-bottom: 15px;
+  }
+
+/*
+  @media screen and (max-width: 991px) {
+    
+
+    
+    .activity-section {
+     
+
+        z-index: 1;
+
+      }
+    }
+    */
+ /**** TERMINA GRID ****/

@@ -24,6 +24,20 @@
   <!--Estilos-->
   <link rel="stylesheet" href="./css/style.css">
   <!--link rel="stylesheet" href="./css/font-awesome.css"-->
+
+  <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(function(OneSignal) {
+    OneSignal.init({
+      appId: "65f2a4b7-99f9-46fc-b8b8-346cd5a9919f",
+      safari_web_id: "web.onesignal.auto.4fdd94b0-fa82-44cd-8fe9-7a26a1b4ad72",
+      notifyButton: {
+        enable: true,
+      },
+    });
+  });
+</script>
 </head>
 <body>
 <!-- partial:index.partial.html -->

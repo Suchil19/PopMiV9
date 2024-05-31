@@ -3,7 +3,7 @@
 
 .hero {
     position: relative;
-    background: linear-gradient(to bottom, #1f29338a , #1f29336f), url("https://images.unsplash.com/photo-1568781269551-3e3baf5ec909?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat center center fixed;
+    background: linear-gradient(to bottom, #1f29338a , #076cd26f), url("https://images.unsplash.com/photo-1542924597-e73e0e35c010?q=80&w=2172&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -13,7 +13,7 @@
     height: 35%;
     letter-spacing: 2px;
     /*border-radius: 0 0 90% 90%/0 0 30% 30%;*/
-    z-index: 2;
+    z-index: -1;
   }
   
   .hero:before {
@@ -101,7 +101,27 @@
     
 
 
+ 	  /* boton video */
 
+     .btn-2{
+      position: relative;
+      background-color: #8167a9;
+      color: #fff;
+      padding: 30px 35px;
+      border: none;
+      border-radius: 50px;
+      transition: all 0.5s ease;
+      margin-right: -220px;
+      margin-top: -60px;
+      z-index: 99 !important;
+      /*-webkit-box-shadow: 0px 7px 22px -11px #000000; 
+      box-shadow: 0px 7px 22px -11px #000000;*/
+    }
+    
+    .btn-2:hover{
+      color: burlywood;
+      background-color: #55308a;
+    }
 
 
 
@@ -115,7 +135,7 @@
     flex-direction: column;
     gap: 2rem;
     background-color: transparent;*/
-
+z-index: 2;
     position: relative;
   }
   .profile_container{
@@ -126,7 +146,7 @@
     aspect-ratio: 1/1;
     width: min(500px,100%);
     position: relative;
-    z-index: 999;
+    z-index: 2;
   }
   .back{
     position: absolute;
@@ -140,11 +160,12 @@
     border-radius: 50%;
     width: 50%;
     height: 50%;
-    background-image: url(https://scontent.fmex3-3.fna.fbcdn.net/v/t39.30808-6/441459513_7516218868426157_8356273537291453991_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFMLOTL9_hBDAWFE_OJrGlrhKwM2qtbMB2ErAzaq1swHebLIxgBAld4uuD5u0TIS_LpTTqdioljVLzcRYD_OHZl&_nc_ohc=eu33oqPX_G8Q7kNvgHgnqQo&_nc_ht=scontent.fmex3-3.fna&oh=00_AYDdyjQYGYpF6XZhnHqvZ1pkSdIgOn4Az4Xsj9iTC1DbpA&oe=665170E8);
+    background-image: url("../img/yo02.jpeg");
     background-size: 100%;
     background-position: center;
     transition: all 0.2s ease-in-out;
     position: relative;
+    z-index: 1;
   }
   .occupation{
   color: #8d08d0;
@@ -169,19 +190,22 @@
  .activity-section {
  position: absolute;
 	padding-bottom: 100px;
-   z-index: 9;
-   top: -220px;
+   top: -230px;
+   -webkit-box-shadow: 6px 8px 26px -11px rgba(0,0,0,0.75);
+-moz-box-shadow: 6px 8px 26px -11px rgba(0,0,0,0.75);
+box-shadow: 6px 8px 26px -11px rgba(0,0,0,0.75);
 
   }
 
   .activity-section h4{
-	  font-size: 1rem;
-	  font-weight: 500;
+	  font-size: 1.5rem;
+	  font-weight: 900 !important;
+    
   }
 
   .activity-section p{
 	  font-size: 1rem;
-	  color: #fff;
+	  color: #000000;
 	  font-weight: 500;
   }
 
@@ -197,11 +221,14 @@
 	transition: ease-in .2s;
   }
 
+  /*Aqui cambiamos el color del h4*/
   .activity-content a{
-	color: #fff;
+	color: #333333;
+  font-weight: 900;
   }
   .activity-bg-image {
-	/*background-image: url("https://images.unsplash.com/photo-1620121692029-d088224ddc74?q=80&w=2232&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");*/
+    background-color: #8d08d0;
+	background-image: url("../../img/FondoTarjeta/backgorund01.jpeg");
 	color: #fff;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -214,7 +241,7 @@
 	width: 95%;
 	margin: 0 auto;
 	border-radius: 10px;
-    background-color: #2d2c2c;
+
   }
   .activity-bg-image:before {
 	content: "";
@@ -237,7 +264,7 @@
 	margin-bottom: 50px;
   }
   .section-heading h5 {
-	color: #8d08d0;
+	color: #2f2f2f;
 	font-size: 2rem;
 	font-weight: 700;
 	line-height: 1.2;
@@ -245,20 +272,21 @@
 	text-transform: uppercase;
     font-style: italic;
 	display: inline-block;
+  border-bottom: 3px solid #0000001d;
   }
   .section-heading-white h2,
   .section-heading-white p {
-	color: var(--blanco);
+	color: #333333;
   }
   
   .section-heading h2 {
 	font-size: 1.2rem;
-	font-weight: 500;
+	font-weight: 900;
 	line-height: 1.1;
 	/*text-transform: uppercase;*/
   }
   .title-icon-divider {
-	color: var(--color-principal);
+	color: #333333;
 	line-height: 1;
 	position: relative;
 	margin-top: 25px;
@@ -268,7 +296,7 @@
 	justify-content: center;
   }
   .section-heading-white .title-icon-divider {
-	color: var(--color-principal);
+	color: #000000;
   }
   .title-icon-divider:before,
   .title-icon-divider:after {
@@ -344,7 +372,7 @@
 	margin-bottom: 15px;
   }
 
-
+/*
   @media screen and (max-width: 991px) {
     
 
@@ -352,8 +380,9 @@
     .activity-section {
      
 
-        z-index: 9;
+        z-index: 1;
 
       }
     }
+    */
  /**** TERMINA GRID ****/

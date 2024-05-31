@@ -1,4 +1,4 @@
-
+importScripts("https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.sw.js");
 //asignar un nombre y versión al cache
 const CACHE_NAME = 'v1_suchil_gaming',
   urlsToCache = [
